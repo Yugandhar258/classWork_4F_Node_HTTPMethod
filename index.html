@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <form action="http://localhost:3000/register" method="get">
+        <!-- Username field -->
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter username" required minlength="4" maxlength="20"><br><br>
+
+        <!-- Email field -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter email" required><br><br>
+
+        <!-- Phone number field -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required pattern="[0-9]{10}" title="Enter a 10-digit phone number"><br><br>
+
+        <!-- Age field -->
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" placeholder="Enter your age" min="1" max="120" required><br><br>
+        
+        <!-- Gender field -->
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
